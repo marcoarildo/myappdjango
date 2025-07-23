@@ -27,7 +27,7 @@ def pagina1(request):
 def pagina2(request):
     return HttpResponse("Pagina 2")
 
-def pagina2(request):
+def pagina3(request):
     return HttpResponse("Pagina 3")
 
 urlpatterns = [
