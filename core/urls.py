@@ -19,7 +19,7 @@ from django.urls import path
 from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse("Hello, World!")
+    return HttpResponse("Hello, World!xxx")
 
 def pagina1(request):
     return HttpResponse("Pagina 1")
@@ -27,10 +27,13 @@ def pagina1(request):
 def pagina2(request):
     return HttpResponse("Pagina 2")
 
+def pagina2(request):
+    return HttpResponse("Pagina 3")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home),
     path('1', pagina1),
     path('2', pagina2),
+    path('3', pagina3),
 ]
