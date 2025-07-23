@@ -24,5 +24,12 @@ else:
 
 
 ## deploy para pythonanywhere
+```
 $ pip install --user pythonanywhere
 $ pa_autoconfigure_django.py https://github.com/marcoarildo/myappdjango.git --python=3.13
+```
+
+## atualizar projeto rodando
+```
+$ pa_autoconfigure_django.py https://github.com/marcoarildo/myappdjango.git --python=3.13 --nuke
+```
